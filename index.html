@@ -13,80 +13,84 @@
 }
 
 body{
-  background:#0a0a0a;
+  font-family:"Segoe UI", Arial, sans-serif;
   color:#ffffff;
-  font-family: "Segoe UI", Arial, sans-serif;
+  background:
+    linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.85)),
+    url("gold-bg.jpg") center top / cover no-repeat fixed;
 }
 
-/* ===== MAIN WRAPPER ===== */
+/* ===== PAGE WRAPPER ===== */
 .page{
-  max-width:420px;
+  max-width:460px;
   margin:auto;
-  padding:36px 18px 60px;
+  padding:48px 20px 70px;
 }
 
-/* ===== TOP BRAND SECTION ===== */
+/* ===== BRAND SECTION ===== */
 .brand{
   text-align:center;
-  margin-bottom:48px;
+  margin-bottom:70px;
 }
 
 .brand-logo{
-  width:200px;
-  height:200px;
+  width:260px;
+  height:260px;
   margin:0 auto 22px;
   background:
     radial-gradient(circle,
-      rgba(218,165,32,0.38) 0%,
-      rgba(218,165,32,0.22) 45%,
-      rgba(0,0,0,0) 85%
+      rgba(218,165,32,0.45) 0%,
+      rgba(218,165,32,0.22) 35%,
+      rgba(0,0,0,0) 70%
     ),
-    url("logo.png") center/150px no-repeat;
-}
-
+    url("logo.png") center/180px no-repeat;
 }
 
 .brand small{
   display:block;
-  font-size:14px;
-  opacity:0.75;
-  margin-bottom:6px;
+  font-size:15px;
+  opacity:0.9;
+  margin-bottom:8px;
 }
 
 .brand h1{
-  font-size:28px;
-  margin-bottom:6px;
+  font-size:32px;
+  margin-bottom:8px;
 }
 
 .brand p{
-  font-size:13px;
-  opacity:0.6;
+  font-size:14px;
+  opacity:0.75;
 }
 
-/* ===== CONTACT SECTION ===== */
-.contact{
+/* ===== PEOPLE SECTION ===== */
+.people{
   display:flex;
   flex-direction:column;
-  gap:42px;
+  gap:48px;
 }
 
-/* ===== PERSON ===== */
 .person{
-  text-align:center;
+  display:flex;
+  align-items:center;
+  gap:20px;
 }
 
 .person img{
-  width:120px;
-  height:120px;
+  width:90px;
+  height:90px;
   border-radius:50%;
   object-fit:cover;
-  margin-bottom:14px;
-  box-shadow:0 0 28px rgba(0,0,0,0.8);
+  box-shadow:0 0 25px rgba(218,165,32,0.35);
 }
 
-.person h3{
+.person-info{
+  flex:1;
+}
+
+.person-info h3{
   font-size:18px;
-  margin-bottom:14px;
+  margin-bottom:10px;
 }
 
 /* ===== WHATSAPP BUTTON ===== */
@@ -94,25 +98,24 @@ body{
   display:inline-block;
   background:#25D366;
   color:#000;
-  text-decoration:none;
-  padding:14px 30px;
+  padding:12px 22px;
   border-radius:14px;
   font-weight:600;
-  font-size:15px;
+  text-decoration:none;
+  font-size:14px;
   transition:0.2s ease;
 }
 
 .btn:hover{
-  transform:translateY(-2px);
-  box-shadow:0 12px 28px rgba(37,211,102,0.4);
+  box-shadow:0 0 24px rgba(37,211,102,0.6);
 }
 
 /* ===== FOOTER ===== */
 .footer{
   text-align:center;
-  margin-top:60px;
+  margin-top:70px;
   font-size:12px;
-  opacity:0.45;
+  opacity:0.6;
 }
 </style>
 </head>
@@ -129,31 +132,37 @@ body{
     <p>Candid • Cinematic • Premium Wedding Stories</p>
   </div>
 
-  <!-- CONTACTS -->
-  <div class="contact">
+  <!-- PEOPLE -->
+  <div class="people">
 
     <div class="person">
       <img src="vijju.jpg" alt="Vijju">
-      <h3>Vijju</h3>
-      <a class="btn" href="https://wa.me/9555074405?text=Hi,%20I’m%20interested%20in%20your%20services">
-        Chat on WhatsApp
-      </a>
+      <div class="person-info">
+        <h3>Vijju</h3>
+        <a class="btn" href="https://wa.me/9555074405?text=Hi,%20I’m%20interested%20in%20your%20services">
+          Chat on WhatsApp
+        </a>
+      </div>
     </div>
 
     <div class="person">
       <img src="abhay.jpg" alt="Abhay">
-      <h3>Abhay</h3>
-      <a class="btn" href="https://wa.me/8127161330?text=Hi,%20I’m%20interested%20in%20your%20services">
-        Chat on WhatsApp
-      </a>
+      <div class="person-info">
+        <h3>Abhay</h3>
+        <a class="btn" href="https://wa.me/8127161330?text=Hi,%20I’m%20interested%20in%20your%20services">
+          Chat on WhatsApp
+        </a>
+      </div>
     </div>
 
     <div class="person">
       <img src="amit.jpg" alt="Amit">
-      <h3>Amit</h3>
-      <a class="btn" href="https://wa.me/8127518454?text=Hi,%20I’m%20interested%20in%20your%20services">
-        Chat on WhatsApp
-      </a>
+      <div class="person-info">
+        <h3>Amit</h3>
+        <a class="btn" href="https://wa.me/8127518454?text=Hi,%20I’m%20interested%20in%20your%20services">
+          Chat on WhatsApp
+        </a>
+      </div>
     </div>
 
   </div>
